@@ -75,7 +75,7 @@ namespace Extensions {
         }
 
         // Returns a normalized direction from start point to end point
-        public static void GetDirection(Vector3 startPoint, Vector3 endPoint) {
+        public static Vector3 GetDirection(Vector3 startPoint, Vector3 endPoint) {
             return (startPoint - endPoint).normalized;
         }
     }
