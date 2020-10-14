@@ -40,5 +40,24 @@ namespace Extensions {
         public static float Cubed(this int value) {
             return Mathf.Pow(value, 3);
         }
+
+        // Divides 2 integers and stores the result and remainder
+        // EX: Divide(10, 3, out int res, out int rem);
+        public static void Divide(int x, int y, out int result, out int remainder) {
+            result = x / y;
+            remainder = x % y;
+        }
+
+        // Divides 2 floats and stores the result and remainder
+        // EX: Divide(10f, 3f, out float res, out float rem);
+        public static void Divide(float x, float y, out float result, out float remainder) {
+            result = x / y;
+            remainder = x % y;
+        }
+
+        // Returns true if the value is between the high and low (inclusively)
+        public static bool IsBetween(this float actual, float low, float high) {
+            return actual >= low && actual <= high;
+        }
     }
 }

@@ -59,5 +59,24 @@ namespace Extensions {
             var planes = GeometryUtility.CalculateFrustumPlanes(camera);
             return GeometryUtility.TestPlanesAABB(planes, renderer.bounds);
         }
+
+        // Swaps the references for 2 integers
+        public static void Swap(ref int x, ref int y) {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+
+        // Swaps the references for 2 floats
+        public static void Swap(ref float x, ref float y) {
+            float temp = x;
+            x = y;
+            y = temp;
+        }
+
+        // Returns a normalized direction from start point to end point
+        public static void GetDirection(Vector3 startPoint, Vector3 endPoint) {
+            return (startPoint - endPoint).normalized;
+        }
     }
 }

@@ -15,5 +15,17 @@ namespace Extensions {
             if (string.IsNullOrEmpty(value)) return value;
             return value.Length <= maxLength && value.Length >= minLength ? value : value.Substring(minLength, maxLength);
         }
+
+        // Prints a formatted line with arguments to the console
+        // EX: Print("(x={0}, y={1}, z={2})", x, y, z);
+        public static void Print(string fmt, params object[] args) {
+            Debug.Log(string.Format(fmt, args));
+        }
+
+        // Quick command for formatting string
+        // EX: "Hello {0}".With("Joe");
+        public static string With(this string s, params object[] args) {
+            return string.Format(s, args);
+        }
     }
 }
