@@ -35,8 +35,23 @@ namespace Extensions {
             return new Vector3(vector.x, vector.y, z);
         }
 
+        // Adds the X value to a vector
+        public static Vector3 AddX(this Vector3 vector, float x) {
+            return new Vector3(vector.x + x, vector.y, vector.z);
+        }
+
+        // Adds the Y value to a vector
+        public static Vector3 AddY(this Vector3 vector, float y) {
+            return new Vector3(vector.x, vector.y + y, vector.z);
+        }
+
+        // Adds the Z value to a vector
+        public static Vector3 AddZ(this Vector3 vector, float z) {
+            return new Vector3(vector.x, vector.y, vector.z + z);
+        }
+
         // Converts a Vector2 into a Vector3
-        public static Vector3 AddZ(this Vector2 vector, float z) {
+        public static Vector3 ConvertVector2(this Vector2 vector, float z) {
             return new Vector3(vector.x, vector.y, z);
         }
     }

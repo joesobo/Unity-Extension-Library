@@ -9,5 +9,11 @@ namespace Extensions {
             if (string.IsNullOrEmpty(value)) return value;
             return value.Length <= maxLength ? value : value.Substring(0, maxLength);
         }
+
+        // Returns a portion of the given string
+        public static string Truncate(this string value, int minLength, int maxLength) {
+            if (string.IsNullOrEmpty(value)) return value;
+            return value.Length <= maxLength && value.Length >= minLength ? value : value.Substring(minLength, maxLength);
+        }
     }
 }

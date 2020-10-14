@@ -27,7 +27,7 @@ namespace Extensions {
         }
 
         // Converts Vector3 to Vector2
-        public static Vector2 xy(this Vector3 v) {
+        public static Vector2 ConvertVector3(this Vector3 v) {
             return new Vector2(v.x, v.y);
         }
 
@@ -39,6 +39,16 @@ namespace Extensions {
         // Sets the Y value of a vector
         public static Vector2 SetY(this Vector2 vector, float y) {
             return new Vector2(vector.x, y);
+        }
+
+        // Adds the X value to a vector
+        public static Vector2 AddX(this Vector2 vector, float x) {
+            return new Vector2(vector.x + x, vector.y);
+        }
+
+        // Adds the Y value to a vector
+        public static Vector2 AddY(this Vector2 vector, float y) {
+            return new Vector2(vector.x, vector.y + y);
         }
     }
 }
