@@ -22,6 +22,11 @@ namespace Extensions {
             Debug.Log(string.Format(fmt, args));
         }
 
+        // Prints an unformated string
+        public static void Print<T>(T value) {
+            Debug.Log(value);
+        }
+
         // Quick command for formatting string
         // EX: "Hello {0}".With("Joe");
         public static string With(this string s, params object[] args) {
