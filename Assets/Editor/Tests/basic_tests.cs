@@ -17,8 +17,8 @@ namespace Tests {
             Swap(ref x, ref y);
 
             //Assert
-            Assert.AreEqual(y, 1);
-            Assert.AreEqual(x, 2);
+            Assert.AreEqual(1, y);
+            Assert.AreEqual(2, x);
         }
 
         [Test]
@@ -31,8 +31,8 @@ namespace Tests {
             Swap(ref x, ref y);
 
             //Assert
-            Assert.AreEqual(y, 1.5f);
-            Assert.AreEqual(x, 2.5f);
+            Assert.AreEqual(1.5f, y);
+            Assert.AreEqual(2.5f, x);
         }
 
         [Test]
@@ -45,7 +45,9 @@ namespace Tests {
             Vector3 output = GetDirection(start, end);
 
             //Assert
-            Assert.AreEqual(output, new Vector3(1, 0, 0));
+            Assert.AreEqual(1, output.x, 1);
+            Assert.AreEqual(0, output.y, 1);
+            Assert.AreEqual(0, output.z, 1);
         }
 
         [Test]

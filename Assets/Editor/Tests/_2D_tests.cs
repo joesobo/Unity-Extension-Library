@@ -16,8 +16,8 @@ namespace Tests {
             Vector2 result = v.Rotate(90);
 
             //Assert
-            Assert.AreEqual(0, result.x, 5);
-            Assert.AreEqual(1, result.y, 5);
+            Assert.AreEqual(0, result.x, 1);
+            Assert.AreEqual(1, result.y, 1);
         }
 
         [Test]
@@ -29,8 +29,8 @@ namespace Tests {
             Vector2 result = v.Rotate(45);
 
             //Assert
-            Assert.AreEqual(0.7f, result.x, 5);
-            Assert.AreEqual(0.7f, result.y, 5);
+            Assert.AreEqual(0.7f, result.x, 1);
+            Assert.AreEqual(0.7f, result.y, 1);
         }
 
         [Test]
@@ -78,9 +78,9 @@ namespace Tests {
             Vector3 output = input.ConvertToVector3(1);
 
             //Assert
-            Assert.AreEqual(output.x, 0, 5);
-            Assert.AreEqual(output.y, 0, 5);
-            Assert.AreEqual(output.z, 1, 5);
+            Assert.AreEqual(output.x, 0, 1);
+            Assert.AreEqual(output.y, 0, 1);
+            Assert.AreEqual(output.z, 1, 1);
         }
 
         [Test]

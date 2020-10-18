@@ -5,8 +5,8 @@ using UnityEngine;
 namespace Extensions {
     public static class _3DExtensions {
         // Returns if a point is inside the radius
-        public static bool IsInsideRadius(Vector3 point, float radius = 2) {
-            return Mathf.Pow(point.x, 2) + Mathf.Pow(point.y, 2) + Mathf.Pow(point.z, 2) < Mathf.Pow(radius, 2);
+        public static bool IsInsideRadius(this Vector3 point, Vector3 origin, float radius = 2) {
+            return Mathf.Pow(point.x - origin.x, 2) + Mathf.Pow(point.y - origin.y, 2) + Mathf.Pow(point.z - origin.z, 2) < Mathf.Pow(radius, 2);
         }
 
         // Returns a random position in a radius
