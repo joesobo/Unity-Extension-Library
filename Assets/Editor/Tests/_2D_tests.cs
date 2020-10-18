@@ -34,7 +34,7 @@ namespace Tests {
         }
 
         [Test]
-        public void rotation_normalized_degree() {
+        public void rotation_normalized_degree_test() {
             //Arrange
             float inputDegrees = 726;
 
@@ -46,7 +46,7 @@ namespace Tests {
         }
 
         [Test]
-        public void rotation_normalized_degree_360() {
+        public void rotation_normalized_degree_360_test() {
             //Arrange
             float inputDegrees = 360;
 
@@ -58,7 +58,7 @@ namespace Tests {
         }
 
         [Test]
-        public void rotation_normalized_degree_0() {
+        public void rotation_normalized_degree_0_test() {
             //Arrange
             float inputDegrees = 0;
 
@@ -70,7 +70,7 @@ namespace Tests {
         }
 
         [Test]
-        public void convert_vector3() {
+        public void convert_vector3_test() {
             //Arrange
             Vector2 input = Vector2.one;
 
@@ -84,7 +84,7 @@ namespace Tests {
         }
 
         [Test]
-        public void set_x() {
+        public void set_x_test() {
             //Arrange
             Vector2 input = Vector2.zero;
 
@@ -97,7 +97,7 @@ namespace Tests {
         }
 
         [Test]
-        public void set_y() {
+        public void set_y_test() {
             //Arrange
             Vector2 input = Vector2.zero;
 
@@ -110,7 +110,7 @@ namespace Tests {
         }
 
         [Test]
-        public void add_x() {
+        public void add_x_test() {
             //Arrange
             Vector2 input = Vector2.one;
 
@@ -123,7 +123,7 @@ namespace Tests {
         }
 
         [Test]
-        public void add_y() {
+        public void add_y_test() {
             //Arrange
             Vector2 input = Vector2.one;
 

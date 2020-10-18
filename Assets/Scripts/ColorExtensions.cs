@@ -28,7 +28,6 @@ namespace Extensions {
         // Converts a color into hex code
         public static string RGBToHex(this Color32 c) {
             return '#' + ColorUtility.ToHtmlStringRGBA(c);
-            //return string.Format("{0:X2}{1:X2}{2:X2}{3:X2}", c.r, c.g, c.b, c.a);
         }
 
         // Easily change a colors alpha

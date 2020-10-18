@@ -8,7 +8,7 @@ using static Extensions._3DExtensions;
 namespace Tests {
     public class _3D_tests {
         [Test]
-        public void is_inside_radius() {
+        public void is_inside_radius_test() {
             //Arrange
             Vector3 input = Vector3.one;
             Vector3 origin = Vector3.zero;
@@ -21,7 +21,7 @@ namespace Tests {
         }
 
         [Test]
-        public void is_inside_radius2() {
+        public void is_inside_radius_test2() {
             //Arrange
             Vector3 input = Vector3.one * 2;
             Vector3 origin = Vector3.one;
@@ -34,7 +34,7 @@ namespace Tests {
         }
 
         [Test]
-        public void not_inside_radius() {
+        public void not_inside_radius_test() {
             //Arrange
             Vector3 input = Vector3.one * 5;
             Vector3 origin = Vector3.zero;
@@ -47,7 +47,7 @@ namespace Tests {
         }
 
         [Test]
-        public void random_position() {
+        public void random_position_test() {
             //Arrange
             Random.seed = 0;
 
@@ -61,7 +61,7 @@ namespace Tests {
         }
 
         [Test]
-        public void random_position_between_radii() {
+        public void random_position_between_radii_test() {
             //Arrange
             Random.seed = 0;
 
@@ -75,7 +75,7 @@ namespace Tests {
         }
     
         [Test]
-        public void set_x() {
+        public void set_x_test() {
             //Arrange
             Vector3 input = Vector3.zero;
 
@@ -89,7 +89,7 @@ namespace Tests {
         }
 
         [Test]
-        public void set_y() {
+        public void set_y_test() {
             //Arrange
             Vector3 input = Vector3.zero;
 
@@ -103,7 +103,7 @@ namespace Tests {
         }
 
         [Test]
-        public void set_z() {
+        public void set_z_test() {
             //Arrange
             Vector3 input = Vector3.zero;
 
@@ -117,7 +117,7 @@ namespace Tests {
         }
 
         [Test]
-        public void add_x() {
+        public void add_x_test() {
             //Arrange
             Vector3 input = Vector3.one;
 
@@ -131,7 +131,7 @@ namespace Tests {
         }
 
         [Test]
-        public void add_y() {
+        public void add_y_test() {
             //Arrange
             Vector3 input = Vector3.one;
 
@@ -145,7 +145,7 @@ namespace Tests {
         }
 
         [Test]
-        public void add_z() {
+        public void add_z_test() {
             //Arrange
             Vector3 input = Vector3.one;
 
