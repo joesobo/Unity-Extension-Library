@@ -50,9 +50,9 @@ namespace Extensions {
             return new Vector3(vector.x, vector.y, vector.z + z);
         }
 
-        // Converts a Vector2 into a Vector3
-        public static Vector3 ConvertVector2(this Vector2 vector, float z) {
-            return new Vector3(vector.x, vector.y, z);
+        // Converts Vector3 to Vector2
+        public static Vector2 ConvertToVector2(this Vector3 v) {
+            return new Vector2(v.x, v.y);
         }
     }
 }
