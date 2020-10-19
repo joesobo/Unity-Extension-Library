@@ -31,8 +31,9 @@ namespace Extensions {
             }
 
             List<T> newList = new List<T>();
+            int count = list.Count;
 
-            for (int i = 0; i < list.Count; i++) {
+            for (int i = 0; i < count; i++) {
                 T item = list[Random.Range(0, list.Count)];
                 list.Remove(item);
                 newList.Add(item);
