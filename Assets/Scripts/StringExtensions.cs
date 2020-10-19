@@ -13,7 +13,7 @@ namespace Extensions {
         // Returns a portion of the given string
         public static string Truncate(this string value, int minLength, int maxLength) {
             if (string.IsNullOrEmpty(value)) return value;
-            return value.Length <= maxLength && value.Length >= minLength ? value : value.Substring(minLength, maxLength);
+            return value.Length <= maxLength && value.Length >= minLength ? value : value.Substring(minLength, maxLength-1);
         }
 
         // Prints a formatted line with arguments to the console
