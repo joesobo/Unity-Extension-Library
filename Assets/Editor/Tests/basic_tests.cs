@@ -8,34 +8,6 @@ using static Extensions.BasicExtensions;
 namespace Tests {
     public class basic_tests {
         [Test]
-        public void swap_int_test() {
-            //Arrange
-            int x = 1;
-            int y = 2;
-
-            //Act
-            Swap(ref x, ref y);
-
-            //Assert
-            Assert.AreEqual(1, y);
-            Assert.AreEqual(2, x);
-        }
-
-        [Test]
-        public void swap_float_test() {
-            //Arrange
-            float x = 1.5f;
-            float y = 2.5f;
-
-            //Act
-            Swap(ref x, ref y);
-
-            //Assert
-            Assert.AreEqual(1.5f, y);
-            Assert.AreEqual(2.5f, x);
-        }
-
-        [Test]
         public void get_direction_test() {
             //Arrange
             Vector3 start = Vector3.zero;

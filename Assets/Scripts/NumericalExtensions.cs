@@ -37,8 +37,8 @@ namespace Extensions {
         }
 
         // Returns a cubed float
-        public static float Cubed(this int value) {
-            return Mathf.Pow(value, 3);
+        public static int Cubed(this int value) {
+            return (int)Mathf.Pow(value, 3);
         }
 
         // Divides 2 integers and stores the result and remainder
@@ -57,7 +57,21 @@ namespace Extensions {
 
         // Returns true if the value is between the high and low (inclusively)
         public static bool IsBetween(this float actual, float low, float high) {
-            return actual >= low && actual <= high;
+            return Mathf.Abs(actual) >= Mathf.Abs(low) && Mathf.Abs(actual) <= Mathf.Abs(high);
+        }
+
+        // Swaps the references for 2 integers
+        public static void Swap(ref int x, ref int y) {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+
+        // Swaps the references for 2 floats
+        public static void Swap(ref float x, ref float y) {
+            float temp = x;
+            x = y;
+            y = temp;
         }
     }
 }
