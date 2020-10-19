@@ -40,7 +40,10 @@ namespace Extensions {
 
         // Finds the component if it is attached, otherwise attaches it
         public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component {
-            return gameObject.GetComponent<T>() ?? gameObject.AddComponent<T>();
+            if (gameObject.GetComponent<T>() != null) {
+                return gameObject.GetComponent<T>();
+            }
+            return gameObject.AddComponent<T>();
         }
 
         // Destroys all children attached to the GameObject
@@ -50,7 +53,7 @@ namespace Extensions {
                 children.Add(parent.transform.GetChild(i));
             }
             for (int i = 0; i < children.Count; i++) {
-                GameObject.Destroy(children[i]);
+                GameObject.Destroy(children[i].gameObject);
             }
         }
 
